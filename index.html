@@ -1,80 +1,105 @@
 <html>
 <head>
-<title>my diary</title>
+<meta name="viewport" content="width=device-width,initial-scale="1.0">
 <style>
+
+
 body {
-    background-image:url("file:///C:/Users/imtiaz/Downloads/old-1130743_1920.jpg");
-    font-family:"comic sans ms";
+  
+ 
+   color: rgba(255,255,255,0.75);
+   font-family: 'Anonymus Pro',monospace;
+   background-color: rgb(25,25,25);
 }
-h1 {
-    font-size:60px;
-    
-    text-align:center;
-    position:absolute;
-    top:30%;
-    left:50%;
-    transform: translateX(-50%) translateY(-50%);
-}
- a {
-   color:white;
-   text-decoration:none;
+.line {
+   position: relative;
+   top:50%;
+   left:20%;
+   width:24em;
+   margin:0 auto;
+   border-right:2px solid rgba(255,255,255,0.75);
+   font-size: 140%;
+ 
+   white-space:nowrap;
+   overflow:hidden;transform: translateY(-50%);
 }
 
-#a {
-   background-color: black;
-   color: white;
-   border-radius: 10px;
-   padding:15px;
-   text-align:cener;
-   position:absolute;
-   top:50%;
-   left:25%;
+.anim-typewriter {
+   animation: typewriter 4s steps(40) 1s 1 normal both,
+   blinkTextCursor 500ms steps(40) infinite normal;
 }
-#b {
-   background-color: black;
-   color:white;
-   border-radius:10px;
-   padding: 15px;
-   text-align: center;
-   position: absolute;
-   top: 50%;
-   left: 32%;
+
+@keyframes typewriter {
+   from {
+           width: 0;
+     }
+     to {
+          width: 26em;
+    }
 }
-#c {
-   background-color:black;
-   padding:15px;
-   border-radius:10px;
-   text-align:center;
-   position:absolute;
-   top:50%;
-   left:41%;
+ 
+@keyframes blinkTextCursor {
+    from  {
+           border-right-color: rgba(255,255,255,0.75);
+     }
+    to {
+        border-right-color: transparent;
+    }
+
 }
-#d {
-   background-color:black;
-   padding:15px;
-   border-radius:10px;
-   text-align:centre;
-   position: absolute;
-   top:50%;
-   left:58%;
+* {
+  padding:0;
+  margin:0;
+  text-decoration:none;
+  list-style:none;
 }
-#e {
-   background-color:black;
-   padding:15px;
-   border-radius:10px;
-   text-align:center;
-   position:absolute;
-   top:50%;
-   left:67%;
+nav {
+    
+    
+}
+label {
+    position:absolute;
+    top:30px;
+    left:80px;
+    line-height:120x;
+    font-size:34px;
+    padding:25px;
+}
+nav ul {
+   float:right;
+   padding:10px;
+}
+ul li {
+    display:inline-block;
+    font-size:20px;
+     line-height:60px;
+     padding:10px;
+}
+ul li a {
+    text-decoration:none;
+    color:white;
+    text-transform:uppercase;
+}
+a.active,a:hover {
+     background: hotpink;
+     border-radius:5px;
+     transition:1s;
+     border:solid;
+      border-color:hotpink;
 }
 </style>
 </head>
 <body>
-<h1>My Diary...</h1>
-<div id="a"><a href=" " target="_blank">HOME</a></div>
-<div id="b"><a href=" " target="_blank">CONTACT</a></div>
-<div id="c"><a href="education.html " target="_blank">EDUCATIONAL DETAILS</a></div>
-<div id="d"><a href=" " target="_blank">PICTURES</a></div>
-<div id="e"><a href=" " target="_blank">DAILY EVENT</a></div>
+<p class="line anim-typewriter">Hi! I am a sohail.I am a student of BIT mesra.</p>
+<nav>
+<label>DesignX</label>
+<ul>
+<li><a class="active" href="">home</a></li>
+<li><a href="">contacts</a></li>
+<li><a href="">services</a></li>
+<li><a href="">feedback</a></li>
+<li><a href="">about</a></li>
+<ul>
+</nav> 
 </body>
 </html>
